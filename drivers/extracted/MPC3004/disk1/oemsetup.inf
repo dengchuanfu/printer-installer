@@ -1,0 +1,130 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer  = 11/14/2025,4.44.0.0
+DriverIsolation = 2
+
+CatalogFile = ricu18.cat
+PnpLockdown = 1
+
+[Manufacturer]
+%Ricoh%=Ricoh,NTamd64
+
+
+;WindowsXP(amd64)
+[Ricoh.NTamd64]
+%DrvName% = PrinterModel64.dat,USBPRINT\RICOHMP_2001360F,LPTENUM\RICOHMP_2001360F,RICOHMP_2001360F
+%CoDrvName% = PrinterModel64_ver.dat,USBPRINT\RICOHPCL6DriveforUP,LPTENUM\RICOHPCL6DriveforUP,RICOHPCL6DriveforUP
+
+
+[PrinterModel64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32,@copcl6ud.txt
+DataSection		= RPD_DATA
+DataFile		= ricu18cd.psz
+LanguageMonitor = ricu18lm,ricu18lm.dll
+
+[PrinterModel64_ver.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= ricu18cd.psz
+LanguageMonitor = ricu18lm,ricu18lm.dll
+
+[PrinterModel64.dat.Services]
+AddService   	= ,0x2
+
+[PrinterModel64_ver.dat.Services]
+AddService   	= ,0x2
+
+[RPD_FILES]
+ricu18ui.dll,ricu18ui.dl_
+ricu18ui.irj
+ricu18ui.rdj
+ricu18ui.rcf
+ricu18ug.dll,ricu18ug.dl_
+ricu18ug.miz
+ricu18ur.dll,ricu18ur.dl_
+ricu18gr.dll,ricu18gr.dl_
+ricu18gl.dll,ricu18gl.dl_ 
+ricu18ci.dll,ricu18ci.dl_
+ricu18cd.dll,ricu18cd.dl_
+ricu18cd.psz
+ricu18cf.cfz
+ricu18cl.ini
+ricu18ch.chm
+ricu18cz.dlz
+ricu18cj.dll,ricu18cj.dl_
+ricu18ct.dll,ricu18ct.dl_
+ricu18cb.dll,ricu18cb.dl_
+ricu18tl.exe,ricu18tl.ex_ 
+ricu18tc.exe,ricu18tc.ex_
+ricu18tt.exe,ricu18tt.ex_
+ricu18tf.exe,ricu18tf.ex_
+
+
+
+[RPD_COMMON_SYS32]
+ricu18lm.dll,ricu18lm.dl_,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dl_,,0x00000020
+mfricr64.dll,mfricr64.dl_,,0x00000020
+RD01Kd64.dll,RD01Kd64.dl_,,0x00000020
+
+[RPD_DATA]
+ConfigFile		= ricu18ui.dll
+DriverFile		= ricu18gr.dll
+HelpFile		= ricu18ch.chm
+
+[DestinationDirs]
+DefaultDestDir		= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware			=TRUE
+
+[SourceDisksFiles.amd64]
+ricu18ui.dl_		= 1
+ricu18ui.irj		= 1
+ricu18ui.rdj		= 1
+ricu18ui.rcf		= 1
+ricu18ug.dl_		= 1
+ricu18ug.miz		= 1
+ricu18ur.dl_		= 1
+ricu18gr.dl_		= 1
+ricu18gl.dl_            = 1
+ricu18ci.dl_		= 1
+ricu18cd.dl_		= 1
+ricu18cd.psz		= 1
+ricu18cf.cfz		= 1
+ricu18cl.ini		= 1
+ricu18ch.chm		= 1
+ricu18cz.dlz		= 1
+ricu18cj.dl_		= 1
+ricu18ct.dl_		= 1
+ricu18cb.dl_		= 1
+ricu18lm.dl_		= 1
+ricdb64.dl_			= 1
+mfricr64.dl_		= 1
+RD01Kd64.dl_		= 1
+copcl6ud.txt		= 1
+ricu18tl.ex_            = 1
+ricu18tc.ex_		= 1
+ricu18tt.ex_		= 1
+ricu18tf.ex_		= 1
+
+[Strings]
+Ricoh	= "Ricoh"
+DrvName	= "PCL6 Driver for Universal Print"
+CoDrvName = "RICOH PCL6 UniversalDriver V4.44"
+DSK		= "PCL6 Printer Driver Disk1"

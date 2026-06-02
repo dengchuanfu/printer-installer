@@ -1,0 +1,11 @@
+build/
+output/
+tools/
+drivers/downloads/
+drivers/extracted/MPC6004/
+*.zip
+*.exe
+*.msi
+*.log
+*.tmp
+

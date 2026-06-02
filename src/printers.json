@@ -1,0 +1,37 @@
+﻿[
+    {
+        "Office":  "行政人事部",
+        "PrinterName":  "行政人事部打印机",
+        "IpAddress":  "192.168.10.139",
+        "DriverName":  "RICOH MP C3004 PCL 6",
+        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+    },
+    {
+        "Office":  "华南区",
+        "PrinterName":  "华南区打印机",
+        "IpAddress":  "192.168.10.180",
+        "DriverName":  "RICOH MP C3004 PCL 6",
+        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+    },
+    {
+        "Office":  "财务部",
+        "PrinterName":  "财务部打印机",
+        "IpAddress":  "192.168.10.112",
+        "DriverName":  "RICOH MP C3004 PCL 6",
+        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+    },
+    {
+        "Office":  "10楼",
+        "PrinterName":  "10楼打印机",
+        "IpAddress":  "192.168.20.180",
+        "DriverName":  "RICOH MP C3004 PCL 6",
+        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+    },
+    {
+        "Office":  "实验室",
+        "PrinterName":  "实验室打印机",
+        "IpAddress":  "192.168.21.180",
+        "DriverName":  "RICOH MP C3004 PCL 6",
+        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+    }
+]
