@@ -35,6 +35,8 @@ namespace PrinterInstaller
     {
         private const string FinanceOfficeName = "财务部";
         private const string FinanceInstallPassword = "970929";
+        private const string UnifiedDriverName = "RICOH Aficio MP C4502 PCL 6";
+        private const string UnifiedDriverInfPath = "drivers\\Ricoh_MP_C4502_5502_Pcl6\\x64\\OEMSETUP.INF";
         private readonly PictureBox logoBox = new PictureBox();
         private readonly ComboBox officeCombo = new ComboBox();
         private readonly Label infoLabel = new Label();
@@ -178,6 +180,7 @@ namespace PrinterInstaller
 
                 var serializer = new JavaScriptSerializer();
                 configs = serializer.Deserialize<List<PrinterConfig>>(json) ?? new List<PrinterConfig>();
+                NormalizeDrivers(configs);
 
                 officeCombo.Items.Clear();
                 foreach (var item in configs)
@@ -193,6 +196,25 @@ namespace PrinterInstaller
             catch (Exception ex)
             {
                 MessageBox.Show("读取配置失败：" + ex.Message + "\n请检查 printers.json 格式和编码（UTF-8）。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private static void NormalizeDrivers(IEnumerable<PrinterConfig> printerConfigs)
+        {
+            if (printerConfigs == null)
+            {
+                return;
+            }
+
+            foreach (var config in printerConfigs)
+            {
+                if (config == null)
+                {
+                    continue;
+                }
+
+                config.DriverName = UnifiedDriverName;
+                config.DriverInfPath = UnifiedDriverInfPath;
             }
         }
 

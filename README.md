@@ -28,9 +28,8 @@ output\PrinterInstaller_OneFile_Slim_Green.exe
 
 ## Required Driver Files
 
-The slim build expects the C3004 driver files under:
+The slim build expects the C4502 x64 driver files under:
 
 ```text
-drivers\extracted\MPC3004\disk1
+drivers\Ricoh_MP_C4502_5502_Pcl6\x64
 ```
-

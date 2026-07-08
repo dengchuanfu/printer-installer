@@ -1,0 +1,129 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2015 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer  = 12/09/2015,1.9.0.0
+CatalogFile = rica5I.cat
+
+[Manufacturer]
+%Ricoh%=Ricoh,NTamd64,NT.5.1
+
+
+;WindowsXP(amd64)
+[Ricoh.NTamd64]
+"RICOH Aficio MP C4502 PCL 6"=RICOH_Aficio_MP_C4502_64.dat,USBPRINT\RICOHAficio_MP_C45024FF8,LPTENUM\RICOHAficio_MP_C45024FF8,RICOHAficio_MP_C45024FF8
+"RICOH Aficio MP C5502 PCL 6"=RICOH_Aficio_MP_C5502_64.dat,USBPRINT\RICOHAficio_MP_C5502B3F9,LPTENUM\RICOHAficio_MP_C5502B3F9,RICOHAficio_MP_C5502B3F9
+"RICOH Aficio MP C4502A PCL 6"=RICOH_Aficio_MP_C4502A_64.dat,USBPRINT\RICOHAficio_MP_C4502B28E,LPTENUM\RICOHAficio_MP_C4502B28E,RICOHAficio_MP_C4502B28E
+"RICOH Aficio MP C5502A PCL 6"=RICOH_Aficio_MP_C5502A_64.dat,USBPRINT\RICOHAficio_MP_C550272B3,LPTENUM\RICOHAficio_MP_C550272B3,RICOHAficio_MP_C550272B3
+
+
+;WindowsXP(x86)
+[Ricoh.NT.5.1]
+"RICOH Aficio MP C4502 PCL 6"=RICOH_Aficio_MP_C4502_64.dat,USBPRINT\RICOHAficio_MP_C45024FF8,LPTENUM\RICOHAficio_MP_C45024FF8,RICOHAficio_MP_C45024FF8
+"RICOH Aficio MP C5502 PCL 6"=RICOH_Aficio_MP_C5502_64.dat,USBPRINT\RICOHAficio_MP_C5502B3F9,LPTENUM\RICOHAficio_MP_C5502B3F9,RICOHAficio_MP_C5502B3F9
+"RICOH Aficio MP C4502A PCL 6"=RICOH_Aficio_MP_C4502A_64.dat,USBPRINT\RICOHAficio_MP_C4502B28E,LPTENUM\RICOHAficio_MP_C4502B28E,RICOHAficio_MP_C4502B28E
+"RICOH Aficio MP C5502A PCL 6"=RICOH_Aficio_MP_C5502A_64.dat,USBPRINT\RICOHAficio_MP_C550272B3,LPTENUM\RICOHAficio_MP_C550272B3,RICOHAficio_MP_C550272B3
+
+
+[RICOH_Aficio_MP_C4502_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Icd.psz
+LanguageMonitor = rica5Ilm,rica5Ilm.dll
+
+[RICOH_Aficio_MP_C5502_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Icd.psz
+LanguageMonitor = rica5Ilm,rica5Ilm.dll
+
+[RICOH_Aficio_MP_C4502A_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Icd.psz
+LanguageMonitor = rica5Ilm,rica5Ilm.dll
+
+[RICOH_Aficio_MP_C5502A_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Icd.psz
+LanguageMonitor = rica5Ilm,rica5Ilm.dll
+
+
+[RPD_FILES]
+rica5Iui.dll,rica5Iui.dl_
+rica5Iui.irj
+rica5Iui.rdj
+rica5Iui.rcf
+rica5Iug.dll,rica5Iug.dl_
+rica5Iug.miz
+rica5Iur.dll,rica5Iur.dl_
+rica5Igr.dll,rica5Igr.dl_
+rica5Ici.dll,rica5Ici.dl_
+rica5Icd.dll,rica5Icd.dl_
+rica5Icd.psz
+rica5Icf.cfz
+rica5Icl.ini
+rica5Ich.chm
+rica5Icz.dlz
+rica5Icj.dll,rica5Icj.dl_
+rica5Ict.dll,rica5Ict.dl_
+rica5Icb.dll,rica5Icb.dl_
+
+[RPD_COMMON_SYS32]
+rica5Ilm.dll,rica5Ilm.dl_,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dl_,,0x00000020
+mfricr64.dll,mfricr64.dl_,,0x00000020
+MPC42d64.dll,MPC42d64.dl_,,0x00000020
+
+[RPD_DATA]
+ConfigFile		= rica5Iui.dll
+DriverFile		= rica5Igr.dll
+HelpFile		= rica5Ich.chm
+
+[DestinationDirs]
+DefaultDestDir		= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware			=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Iui.dl_		= 1
+rica5Iui.irj		= 1
+rica5Iui.rdj		= 1
+rica5Iui.rcf		= 1
+rica5Iug.dl_		= 1
+rica5Iug.miz		= 1
+rica5Iur.dl_		= 1
+rica5Igr.dl_		= 1
+rica5Ici.dl_		= 1
+rica5Icd.dl_		= 1
+rica5Icd.psz		= 1
+rica5Icf.cfz		= 1
+rica5Icl.ini		= 1
+rica5Ich.chm		= 1
+rica5Icz.dlz		= 1
+rica5Icj.dl_		= 1
+rica5Ict.dl_		= 1
+rica5Icb.dl_		= 1
+rica5Ilm.dl_		= 1
+ricdb64.dl_			= 1
+mfricr64.dl_		= 1
+MPC42d64.dl_		= 1
+
+[Strings]
+Ricoh="Ricoh"
+DSK= "PCL6 Printer Driver Disk1"

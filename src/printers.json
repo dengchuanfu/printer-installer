@@ -3,35 +3,35 @@
         "Office":  "行政人事部",
         "PrinterName":  "行政人事部打印机",
         "IpAddress":  "192.168.10.139",
-        "DriverName":  "RICOH MP C3004 PCL 6",
-        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+        "DriverName":  "RICOH Aficio MP C4502 PCL 6",
+        "DriverInfPath":  "drivers\\Ricoh_MP_C4502_5502_Pcl6\\x64\\OEMSETUP.INF"
     },
     {
         "Office":  "华南区",
         "PrinterName":  "华南区打印机",
         "IpAddress":  "192.168.10.180",
-        "DriverName":  "RICOH MP C3004 PCL 6",
-        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+        "DriverName":  "RICOH Aficio MP C4502 PCL 6",
+        "DriverInfPath":  "drivers\\Ricoh_MP_C4502_5502_Pcl6\\x64\\OEMSETUP.INF"
     },
     {
         "Office":  "财务部",
         "PrinterName":  "财务部打印机",
         "IpAddress":  "192.168.10.112",
-        "DriverName":  "RICOH MP C3004 PCL 6",
-        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+        "DriverName":  "RICOH Aficio MP C4502 PCL 6",
+        "DriverInfPath":  "drivers\\Ricoh_MP_C4502_5502_Pcl6\\x64\\OEMSETUP.INF"
     },
     {
         "Office":  "10楼",
         "PrinterName":  "10楼打印机",
         "IpAddress":  "192.168.20.180",
-        "DriverName":  "RICOH MP C3004 PCL 6",
-        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+        "DriverName":  "RICOH Aficio MP C4502 PCL 6",
+        "DriverInfPath":  "drivers\\Ricoh_MP_C4502_5502_Pcl6\\x64\\OEMSETUP.INF"
     },
     {
         "Office":  "实验室",
         "PrinterName":  "实验室打印机",
         "IpAddress":  "192.168.21.180",
-        "DriverName":  "RICOH MP C3004 PCL 6",
-        "DriverInfPath":  "drivers\\extracted\\MPC3004\\disk1\\oemsetup.inf"
+        "DriverName":  "RICOH Aficio MP C4502 PCL 6",
+        "DriverInfPath":  "drivers\\Ricoh_MP_C4502_5502_Pcl6\\x64\\OEMSETUP.INF"
     }
 ]

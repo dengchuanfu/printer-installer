@@ -1,0 +1,62 @@
+{
+
+	"common" :
+	{
+
+		"root" :
+		{
+			"Logging"								: [ "1",					"REG_DWORD" ]
+		},
+
+		"common_scope" :
+		{
+			"DriverProductVersion"		: [ "1.9.0.0",		"REG_SZ" ],
+			"Date"				: [ "12/09/2015",	"REG_SZ" ],
+			"PrinterModelName"		: [ "Aficio MP C4502",	"REG_SZ" ],
+			"PDL"						: [ "PCLXL",				"REG_SZ" ]
+		},
+
+		"ui_scope" :
+		{
+		},
+
+		"gr_scope" :
+		{
+		},
+
+		"capsdb_scope" :
+		{
+		}
+
+	},
+
+       "RICOH Aficio MP C4502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP C4502", "REG_SZ" ]
+               }
+       },
+       "RICOH Aficio MP C5502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP C5502", "REG_SZ" ]
+               }
+       },
+       "RICOH Aficio MP C4502A PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP C4502A", "REG_SZ" ]
+               }
+       },
+       "RICOH Aficio MP C5502A PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP C5502A", "REG_SZ" ]
+               }
+       }
+ 
+}
